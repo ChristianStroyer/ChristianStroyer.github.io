@@ -257,7 +257,7 @@ class Enemy {
 		
 		this.enemy_skud_cooldown--
 
-		if (this.enemy_skud_cooldown == 0){
+		if (this.enemy_skud_cooldown <= 0){
 				enemy_Shot.push(new Enemy_Shot(this.pos.x,this.pos.y));
 				this.enemy_skud_cooldown = Math.floor(Math.random() * (50 - 40) ) + 40
 			}

@@ -1,3 +1,7 @@
+console.log("hack: grid = 0")
+
+
+
 let cols, rows;
 let w 		  = 60;
 let grid 	  = [];

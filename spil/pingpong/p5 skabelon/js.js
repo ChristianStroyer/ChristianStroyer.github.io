@@ -1,7 +1,19 @@
 var collor_et = 200
 var collor_to = 10
 var collor_tre = 100
+
 var crazy_collor = false
+
+var knab_crazy_collor
+
+var auto_play_et = false
+var auto_play_to = false
+
+var knab_auto_play_et
+var knab_auto_play_to
+
+
+
 
 function setup () {
 	createCanvas(600,400)
@@ -9,7 +21,46 @@ function setup () {
 	bold = new Bold
 	spiller_et = new Spiller_et(bold)
 	spiller_to = new Spiller_to(bold)
+
+
+
+
+
+
+	knab_auto_play_et = createButton("auto_play");
+	knab_auto_play_et.position(30,150)
+	knab_auto_play_et.mousePressed(invert_auto_play_et)
+	
+	knab_auto_play_to = createButton("auto_play");
+	knab_auto_play_to.position(510,150)
+	knab_auto_play_to.mousePressed(invert_auto_play_to)
+
+	knab_crazy_collor = createButton("crazy_collor");
+	knab_crazy_collor.position(260,150)
+	knab_crazy_collor.mousePressed(invert_crazy_collor)
+
 }
+
+// knabe functioner
+
+
+function invert_auto_play_et () {
+	auto_play_et = !auto_play_et
+}
+
+function invert_auto_play_to () {
+	auto_play_to = !auto_play_to
+}
+
+
+
+function invert_crazy_collor () {
+	crazy_collor = !crazy_collor
+}
+
+
+
+
 
 function draw () {
 
@@ -30,11 +81,18 @@ if (crazy_collor == true) {
 
 	spiller_et.show()
 	spiller_et.move()
-//	spiller_et.auto_play()
+	
+	if (auto_play_et == true) {
+		spiller_et.auto_play()
+	}
+
 
 	spiller_to.show()
 	spiller_to.move()
-//	spiller_to.auto_play()
+	
+	if (auto_play_to == true) {
+		spiller_to.auto_play()
+	}
 }
 
 class Bold {
@@ -120,7 +178,7 @@ class Spiller_et {
 
 	}
 
-/*		auto_play() {
+		auto_play() {
 
 		if(this.bold.pos.y > this.y + 200) {
 			this.y+=3
@@ -130,7 +188,7 @@ class Spiller_et {
 		}
 
 	}
-*/
+
 
 }
 
@@ -167,7 +225,7 @@ class Spiller_to {
 
 	}
 
-/*	auto_play() {
+	auto_play() {
 
 		if(this.bold.pos.y > this.y + 200) {
 			this.y+=3
@@ -177,5 +235,5 @@ class Spiller_to {
 		}
 
 	}
-*/
+
 }

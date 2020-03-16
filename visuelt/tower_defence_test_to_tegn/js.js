@@ -67,7 +67,7 @@ function mouseClicked() {
   vej.push(createVector(mouseX, mouseY))
 
   // prevent default
-  return false;
+  return true;
 }
 
 

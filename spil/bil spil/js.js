@@ -1,11 +1,23 @@
-
-
-
-
-
 var bold;
 var obstacle;
 var d;
+
+var bil_venstre
+var bil
+var bil_hoejre
+
+var visbil
+
+function preload(){
+
+ bil_venstre	= loadImage("Low_poly_2D_Car_Sprite_Pack_update1.3/carYellow/carYellow_0005.png")
+ bil 			= loadImage("Low_poly_2D_Car_Sprite_Pack_update1.3/carYellow/carYellow_0006.png")
+ bil_hoejre		= loadImage("Low_poly_2D_Car_Sprite_Pack_update1.3/carYellow/carYellow_0007.png")
+
+
+ visbil = bil
+}
+
 
 function setup () {
 	createCanvas(500,600)
@@ -43,15 +55,18 @@ class Bold {
 	show() {
 		noStroke();
 		fill(0,255,0)
-		ellipse(this.pos.x, this.pos.y, this.s, this.s)
+		image(visbil, this.pos.x - 155, this.pos.y -50)
 	}
 
 	move () {
 		if (keyIsDown(68)) {
 			this.pos.x += this.speed;
-		}
-		if (keyIsDown(65)) {
+			visbil  = bil_venstre
+		} else if (keyIsDown(65)) {
 			this.pos.x -= this.speed;
+			visbil  = bil_hoejre
+		} else {
+ 			visbil  = bil
 		}
 	}
 	eage() {

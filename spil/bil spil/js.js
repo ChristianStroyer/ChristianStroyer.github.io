@@ -55,7 +55,8 @@ class Bold {
 	show() {
 		noStroke();
 		fill(0,255,0)
-		image(visbil, this.pos.x - 155, this.pos.y -50)
+		image(visbil, this.pos.x - 155, this.pos.y -125)
+		ellipse(this.pos.x, this.pos.y, this.s, this.s)
 	}
 
 	move () {

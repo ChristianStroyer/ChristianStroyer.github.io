@@ -18,19 +18,27 @@
 					"menupunkter": [ 
 										{
 											"link": "index.html",
-											"navn":	"introduktion"
+											"navn":	"introduktion",
+											"active": false
 										},
 										{
-											"link": "index.html",
-											"navn":	"introduktion",
-											"active": true
+											"link": "spil.html",
+											"navn":	"spil",
+											"active": false
+										},
+										{
+											"link": "visuelt.html",
+											"navn":	"visuelt",
+											"active": false
 										}
-
-					]
+									]
 				}
 
 
 function setup() {
+
+	var url = window.location.href
+	console.log(url)
 
 
 	var td1 = createElement('td','hej1');

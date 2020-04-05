@@ -12,6 +12,19 @@
 <body>
 
 
+
+<!--
+<ul>
+  <li><a class="active" href="index.html">introduktion</a></li>
+  <li><a 			         	href="spil.html">spil</a></li>
+  <li><a 			        	href="visuelt.html">visuelt</a></li>
+  <li><a                href="bog_uddrag.html">bog uddrag</a></li>
+  <li><a 	        			href="andet.html">andet</a></li>
+</ul>
+
+-->
+
+
 <script>
 
 	var menu = {
@@ -19,26 +32,60 @@
 										{
 											"link": "index.html",
 											"navn":	"introduktion",
-											"active": false
 										},
 										{
 											"link": "spil.html",
 											"navn":	"spil",
-											"active": false
 										},
 										{
 											"link": "visuelt.html",
 											"navn":	"visuelt",
-											"active": false
+										},
+										{
+											"link": "menutest.html",
+											"navn":	"menutest",
 										}
 									]
 				}
 
 
-function setup() {
+
+
+
+function drawmenu() {
 
 	var url = window.location.href
 	console.log(url)
+	var urlsplit = url.split('/')
+	var lastPartOfUrl = urlsplit[urlsplit.length-1]
+
+	var ul = createElement('ul')
+
+	for(var i=0; i<menu.menupunkter.length; i++) {
+		var menupunkt = menu.menupunkter[i];
+		
+		var li = createElement('li')
+		ul.child(li)
+
+		var a = createElement('a',menupunkt.navn)
+		a.attribute('href',menupunkt.link)
+
+		if (lastPartOfUrl == menupunkt.link)
+
+		a.attribute('class','active')
+		li.child(a)
+	
+	}
+
+	
+
+}
+
+
+function setup() {
+
+	drawmenu()
+
 
 
 	var td1 = createElement('td','hej1');

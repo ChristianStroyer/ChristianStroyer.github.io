@@ -19,6 +19,10 @@
 										{
 											"link": "andet.html",
 											"navn":	"andet",
+										},
+										{
+											"link": "simulationer.html",
+											"navn":	"simulationer",
 										}
 									]
 				}
@@ -81,7 +85,7 @@ function drawmenu() {
 	var div = document.createElement("div")
 	div.innerHTML = logo
 	menu_element.appendChild(div)
-	
+
 	var ul = document.createElement("ul");   
 	menu_element.appendChild(ul);
 

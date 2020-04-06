@@ -36,6 +36,7 @@ li a:hover {
 
 body {
   margin: 0;
+  background-color: rgb(150,150,150);
 }
 
 #menu {
@@ -43,7 +44,8 @@ body {
   width: 100%;
   position: fixed;        
   /*background: red;*/
-  background: white;
+  /*background: white;*/
+    background-color: rgb(150,150,150);
   padding: 0px 0;
   color: #fff;
   top: 0;
@@ -53,5 +55,6 @@ body {
   margin-top: 150px;
   width: 100%;
   /*background: blue;*/
-  color: black;
+  /*  background-color: rgb(150,150,150);*/
+  color: black; 
 }

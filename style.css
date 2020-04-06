@@ -38,30 +38,19 @@ body {
   margin: 0;
 }
 
-ul.sidemenu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+#menu {
+
+  width: 100%;
+  position: fixed;        
+  /*background: red;*/
+  padding: 0px 0;
+  color: #fff;
+  top: 0;
 }
 
-li.sidemenu a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li.sidemenu a.active {
-  background-color: #FFAF50;
-  color: white;
-}
-
-li.sidemenu a:hover:not(.active) {
-  background-color: #500;
-  color: white;
+#content {
+  margin-top: 150px;
+  width: 100%;
+  /*background: blue;*/
+  color: black;
 }

@@ -38,6 +38,13 @@ var googleAnalyticsString = `
 
 `
 
+
+var logo = `
+<img src="/assets/sebastian_website_logo.png" alt="" width="500" height="100" />
+`
+
+
+
 function drawmenu() {
 
 	var url = window.location.href
@@ -71,6 +78,10 @@ function drawmenu() {
 
 	var menu_element = document.getElementById("menu")
 
+	var div = document.createElement("div")
+	div.innerHTML = logo
+	menu_element.appendChild(div)
+	
 	var ul = document.createElement("ul");   
 	menu_element.appendChild(ul);
 
@@ -95,6 +106,9 @@ function drawmenu() {
 	var div = document.createElement("div")
 	div.innerHTML = googleAnalyticsString
 	menu_element.appendChild(div)
+
+
+
 }
 
 window.onload = function() {

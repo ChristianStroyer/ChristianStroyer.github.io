@@ -173,12 +173,12 @@ class objekt{
 		}
 	}
 	eadge(){
-		if (this.pos.x < -100 || this.pos.x > windowx + 100){
+		if (this.pos.x < -this.r * 5 || this.pos.x > windowx + this.r * 5){
 			var idx = objekter.indexOf(this)
 			if(idx>=0)
 				objekter.splice(idx,1)
 		}
-		if (this.pos.y < -100 || this.pos.y > windowy + 100){
+		if (this.pos.y < -this.r * 5 || this.pos.y > windowy + this.r * 5){
 			var idx = objekter.indexOf(this)
 			if(idx>=0)
 				objekter.splice(idx,1)

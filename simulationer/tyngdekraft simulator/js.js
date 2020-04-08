@@ -10,9 +10,11 @@ function setup () {
 
 
 
-	var windowy = windowHeight - 25
-	var windowx = windowWidth - 25
-	createCanvas(windowx, windowy)
+	//var windowy = windowHeight - 25
+	//var windowx = windowWidth - 25
+	
+
+	createCanvas(750, 750)
 
 
 	//objekter.push(new objekt(createVector(random(750, 750),random(750, 750)),createVector(0,0),1000000,0))
@@ -26,21 +28,21 @@ function setup () {
 //var tid_til_ny = 60
 
 
-var windowy
-var windowx
+var windowy = 750
+var windowx = 750
 
 function draw () {
 
 
-	var previous_windowy = windowy
-	var previous_windowx = windowx
+	//var previous_windowy = windowy
+	//var previous_windowx = windowx
 
 	windowy = 750//windowHeight - 25
 	windowx = 750//windowWidth - 25
 
-	if (previous_windowy != windowy || previous_windowx != windowx){
-		resizeCanvas(windowx, windowy)
-	}
+	//if (previous_windowy != windowy || previous_windowx != windowx){
+	//	resizeCanvas(windowx, windowy)
+	//}
 
 
 
@@ -173,12 +175,12 @@ class objekt{
 		}
 	}
 	eadge(){
-		if (this.pos.x < -this.r * 5 || this.pos.x > windowx + this.r * 5){
+		if (this.pos.x < -this.r * 2 || this.pos.x > windowx + this.r * 2){
 			var idx = objekter.indexOf(this)
 			if(idx>=0)
 				objekter.splice(idx,1)
 		}
-		if (this.pos.y < -this.r * 5 || this.pos.y > windowy + this.r * 5){
+		if (this.pos.y < -this.r * 2 || this.pos.y > windowy + this.r * 2){
 			var idx = objekter.indexOf(this)
 			if(idx>=0)
 				objekter.splice(idx,1)

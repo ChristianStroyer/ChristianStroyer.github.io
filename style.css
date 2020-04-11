@@ -1,36 +1,91 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  top: 0;
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: sticky;
+	top: 0;
 }
 
-li {
-  float: left;
+#menu li {
+	float: left;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+#menu li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+#menu li a:hover {
+	background-color: #111;
 }
 
-.active {
-  background-color: #00CC33;
+#menu .active {
+	background-color: #00CC33;
 }
 
 
 
+
+#list *{
+	box-sizing: border-box;
+	border-style: none; 
+	/* border-style: solid; */
+	border-width: 5px;
+	padding: 2px;
+	margin: 2px;
+}
+
+#list {
+
+}
+
+#list .listitem {
+	margin: 20px;
+	border-color:black;
+	border-style: solid;
+}
+
+#list .listitem_topbar {
+	border-color:blue;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+#list .listitem_content {
+	border-color:red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+#list .listitem_topbar_type { 
+	border-color:LIGHTSALMON;
+}
+
+#list .listitem_topbar_created { 
+	border-color:TOMATO;
+}
+
+#list .listitem_topbar_updated { 
+	border-color:DARKORANGE;
+}
+
+#list .listitem_content_text { 
+	/*border-color:LIMEGREEN;*/
+}
+
+#list .listitem_content_image { 
+	/*border-color:FORESTGREEN;*/
+}
 
 
 
@@ -53,6 +108,8 @@ body {
 
 #content {
   margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 100%;
   /*background: blue;*/
   /*  background-color: rgb(150,150,150);*/

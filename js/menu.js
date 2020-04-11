@@ -56,28 +56,7 @@ function drawmenu() {
 	var urlsplit = url.split('/')
 	var lastPartOfUrl = urlsplit[urlsplit.length-1]
 
-/*	var ul = createElement('ul')
-	ul.parent('menu')
 
-	for(var i=0; i<menu.menupunkter.length; i++) {
-		var menupunkt = menu.menupunkter[i];
-		
-		var li = createElement('li')
-		ul.child(li)
-
-		var a = createElement('a',menupunkt.navn)
-		a.attribute('href','/' + menupunkt.link)
-
-		if (lastPartOfUrl == menupunkt.link) {
-			a.attribute('class','active')
-		}
-
-		li.child(a)	
-	}
-	var div = createDiv( googleAnalyticsString )
-	div.parent('menu')
-
-*/
 
 
 	var menu_element = document.getElementById("menu")

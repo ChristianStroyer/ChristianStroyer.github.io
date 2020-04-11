@@ -20,11 +20,6 @@
 											"link": "simulationer.html",
 											"navn":	"simulationer",
 										},
-
-
-
-
-										
 										{
 											"link": "andet.html",
 											"navn":	"andet",

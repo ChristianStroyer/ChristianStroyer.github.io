@@ -30,7 +30,7 @@ var data = {
 		{
 			"navn": 		"BIL SPIL",
 			"tekst": 		"dette er en tekst om bil spil",
-			"billede": 		"http://placekitten.com/425/300?image=15",/*/assets/bil_spil.png",*/
+			"billede": 		"/assets/bil_spil.png",
 			"link": 		"/spil/bil spil/bil spil.html",
 			"type": 		"spil forsøg",
 			"lavet": 		"1 december 2019",
@@ -49,54 +49,58 @@ function drawlist() {
 	for(let i = 0; i < data.punkter.length; i++) {
 		let punkt = data.punkter[i]
 
-		let listitem_div = document.createElement("div")
-		listitem_div.setAttribute("class","listitem")
-		listitem_div.setAttribute("id","list_item_" + i)
-		liste_element.appendChild(listitem_div)
+		let link = document.createElement("a")
+		link.setAttribute("href",data.punkter[i].link)
+		liste_element.appendChild(link)
 
-			let listitem_topbar_div = document.createElement("div")
-			listitem_topbar_div.setAttribute("class","listitem_topbar")
-			listitem_div.appendChild(listitem_topbar_div)
+			let listitem_div = document.createElement("div")
+			listitem_div.setAttribute("class","listitem")
+			listitem_div.setAttribute("id","list_item_" + i)
+			link.appendChild(listitem_div)
 
-				let listitem_topbar_type_div = document.createElement("div")
-				listitem_topbar_type_div.setAttribute("class","listitem_topbar_type")
-				listitem_topbar_div.appendChild(listitem_topbar_type_div)
+				let listitem_topbar_div = document.createElement("div")
+				listitem_topbar_div.setAttribute("class","listitem_topbar")
+				listitem_div.appendChild(listitem_topbar_div)
 
-					listitem_topbar_type_div.innerHTML = "<b>Type:</b>" + data.punkter[i].type
+					let listitem_topbar_type_div = document.createElement("div")
+					listitem_topbar_type_div.setAttribute("class","listitem_topbar_type")
+					listitem_topbar_div.appendChild(listitem_topbar_type_div)
 
-				
-				let listitem_topbar_created_div = document.createElement("div")
-				listitem_topbar_created_div.setAttribute("class","listitem_topbar_created")
-				listitem_topbar_div.appendChild(listitem_topbar_created_div)
+						listitem_topbar_type_div.innerHTML = "<b>Type:</b>" + data.punkter[i].type
 
-					listitem_topbar_created_div.innerHTML = "<b>Lavet:</b>" + data.punkter[i].lavet
-				
+					
+					let listitem_topbar_created_div = document.createElement("div")
+					listitem_topbar_created_div.setAttribute("class","listitem_topbar_created")
+					listitem_topbar_div.appendChild(listitem_topbar_created_div)
 
-
-				if (data.punkter[i].opdateret){
-				let listitem_topbar_updated_div = document.createElement("div")
-				listitem_topbar_updated_div.setAttribute("class","listitem_topbar_updated")
-				listitem_topbar_div.appendChild(listitem_topbar_updated_div)
-
-					listitem_topbar_updated_div.innerHTML = "<b>Opdateret:</b>" + data.punkter[i].opdateret
-				}
-
-			let listitem_content_div = document.createElement("div")
-			listitem_content_div.setAttribute("class","listitem_content")
-			listitem_div.appendChild(listitem_content_div)
-
-				let listitem_content_text_div = document.createElement("div")
-				listitem_content_text_div.setAttribute("class","listitem_content_text")
-				listitem_content_div.appendChild(listitem_content_text_div)
-
-					listitem_content_text_div.innerHTML = "<h1><b><u>" + data.punkter[i].navn + "</u></b></h1>" + "<p>" + data.punkter[i].tekst + "</p>"
+						listitem_topbar_created_div.innerHTML = "<b>Lavet:</b>" + data.punkter[i].lavet
+					
 
 
-				let listitem_content_image_div = document.createElement("div")
-				listitem_content_image_div.setAttribute("class","listitem_content_image")
-				listitem_content_div.appendChild(listitem_content_image_div)
+					if (data.punkter[i].opdateret){
+					let listitem_topbar_updated_div = document.createElement("div")
+					listitem_topbar_updated_div.setAttribute("class","listitem_topbar_updated")
+					listitem_topbar_div.appendChild(listitem_topbar_updated_div)
 
-					listitem_content_image_div.innerHTML = "<img src=" + data.punkter[i].billede + " width='425' height='300'" + ">"
+						listitem_topbar_updated_div.innerHTML = "<b>Opdateret:</b>" + data.punkter[i].opdateret
+					}
+
+				let listitem_content_div = document.createElement("div")
+				listitem_content_div.setAttribute("class","listitem_content")
+				listitem_div.appendChild(listitem_content_div)
+
+					let listitem_content_text_div = document.createElement("div")
+					listitem_content_text_div.setAttribute("class","listitem_content_text")
+					listitem_content_div.appendChild(listitem_content_text_div)
+
+						listitem_content_text_div.innerHTML = "<h1><b><u>" + data.punkter[i].navn + "</u></b></h1>" + "<p>" + data.punkter[i].tekst + "</p>"
+
+
+					let listitem_content_image_div = document.createElement("div")
+					listitem_content_image_div.setAttribute("class","listitem_content_image")
+					listitem_content_div.appendChild(listitem_content_image_div)
+
+						listitem_content_image_div.innerHTML = "<img src=" + data.punkter[i].billede + " width='425' height='300'" + ">"
 	}
 }
 

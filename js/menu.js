@@ -5,6 +5,10 @@
 											"navn":	"introduktion",
 										},
 										{
+											"link": "alle_projekter.html",
+											"navn":	"alle projekter",
+										},
+										{
 											"link": "spil.html",
 											"navn":	"spil",
 										},

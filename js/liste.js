@@ -1,56 +1,48 @@
 var data = {
 	"punkter": [
-		{
-			"navn": 		"SHOOTER GAME",
-			"tekst": 		"dette er en tekst om shooter game",
-			"billede": 		"/assets/shooter_game.png",
-			"link": 		"/spil/shooter game/html.html",
-			"type": 		"spil forsøg",
-			"lavet": 		"11 marts 2020",
-			"opdateret": 	""
-		},
-		{
-			"navn": 		"PING PONG",
-			"tekst": 		"dette er en tekst om pingpong spillet",
-			"billede": 		"/assets/pingpong.png",
-			"link": 		"/spil/pingpong/pingpong.html",
-			"type": 		"spil forsøg",
-			"lavet": 		"19 febuar 2020",
-			"opdateret": 	""
-		},
-		{
-			"navn": 		"EPICK LABYRINT",
-			"tekst": 		"dette er en tekst om epick labyrint spillet",
-			"billede": 		"/assets/epick_labyrint.png",
-			"link": 		"/spil/epick labyrint/p5 skabelon/epick labyrint.html",
-			"type": 		"spil forsøg",
-			"lavet": 		"startede 15 januar 2020. blev færdig senere",
-			"opdateret": 	""
-		},
-		{
-			"navn": 		"BIL SPIL",
-			"tekst": 		"dette er en tekst om bil spil",
-			"billede": 		"/assets/bil_spil.png",
-			"link": 		"/spil/bil spil/bil spil.html",
-			"type": 		"spil forsøg",
-			"lavet": 		"1 december 2019",
-			"opdateret": 	"19 marts 2020"
-		},
+		
+		
+		
 
 
 
 
 //   rekefølge ikke lavet
 
-		{
-			"navn": 		"CIRKEL TRÆNING",
+		
+		
+		
+		
+		
+		
+		/*{
+			"navn": 		"FANEN ALLE PROJEKTER",
 			"tekst": 		"tekst",
-			"billede": 		"/assets/cirkel_træning.png",
-			"link": 		"/spil/cirkel trening/cirkel trening.html",
-			"type": 		"forsøg",
-			"lavet": 		"13 november 2019",
+			"billede": 		"/assets/alle_projekter_1.png",
+			"link": 		"/alle_projekter.html",
+			"type": 		"link side",
+			"lavet": 		"12 april 2020",
+			"opdateret": 	""
+		},*/
+		{
+			"navn": 		"TYNGDEKRAFT SIMULATOR 1",
+			"tekst": 		"tekst",
+			"billede": 		"/assets/tyngdekraft_simulator.png",
+			"link": 		"/simulationer/tyngdekraft%20simulator/html.html",
+			"type": 		"simulation",
+			"lavet": 		"7 april 2020",
 			"opdateret": 	""
 		},
+		{
+			"navn": 		"KORONA SIMULATOR",
+			"tekst": 		"tekst",
+			"billede": 		"/assets/syge_simulator.png",
+			"link": 		"/simulationer/syge%20simulator/html.html",
+			"type": 		"simulation",
+			"lavet": 		"1 april 2020",
+			"opdateret": 	""
+		},
+
 		{
 			"navn": 		"TOWER DEFENCE TEST TEGN MAP",
 			"tekst": 		"tekst",
@@ -70,21 +62,22 @@ var data = {
 			"opdateret": 	""
 		},
 		{
-			"navn": 		"POLYGON",
-			"tekst": 		"tekst",
-			"billede": 		"/assets/polygon.png",
-			"link": 		"/visuelt/polygon/p5 skabelon/html.html",
-			"type": 		"visuelt",
-			"lavet": 		"19 januar 2020",
+			"navn": 		"SHOOTER GAME",
+			"tekst": 		"dette er en tekst om shooter game",
+			"billede": 		"/assets/shooter_game.png",
+			"link": 		"/spil/shooter game/html.html",
+			"type": 		"spil forsøg",
+			"lavet": 		"11 marts 2020",
 			"opdateret": 	""
 		},
+
 		{
-			"navn": 		"DOUNOT VIDEO",
-			"tekst": 		"tekst",
-			"billede": 		"/assets/dounot_video.png",
-			"link": 		"/visuelt/videoer/dounot/dounot.html",
-			"type": 		"3d animation + video",
-			"lavet": 		"2 febuar 2020",
+			"navn": 		"PING PONG",
+			"tekst": 		"dette er en tekst om pingpong spillet",
+			"billede": 		"/assets/pingpong.png",
+			"link": 		"/spil/pingpong/pingpong.html",
+			"type": 		"spil forsøg",
+			"lavet": 		"19 febuar 2020",
 			"opdateret": 	""
 		},
 		{
@@ -97,21 +90,56 @@ var data = {
 			"opdateret": 	""
 		},
 		{
-			"navn": 		"KORONA SIMULATOR",
+			"navn": 		"DOUNOT VIDEO",
 			"tekst": 		"tekst",
-			"billede": 		"/assets/syge_simulator.png",
-			"link": 		"/simulationer/syge%20simulator/html.html",
-			"type": 		"simulation",
-			"lavet": 		"1 april 2020",
+			"billede": 		"/assets/dounot_video.png",
+			"link": 		"/visuelt/videoer/dounot/dounot.html",
+			"type": 		"3d animation + video",
+			"lavet": 		"2 febuar 2020",
+			"opdateret": 	""
+		},
+
+
+		{
+			"navn": 		"POLYGON",
+			"tekst": 		"tekst",
+			"billede": 		"/assets/polygon.png",
+			"link": 		"/visuelt/polygon/p5 skabelon/html.html",
+			"type": 		"visuelt",
+			"lavet": 		"19 januar 2020",
 			"opdateret": 	""
 		},
 		{
-			"navn": 		"TYNGDEKRAFT SIMULATOR 1",
+			"navn": 		"EPICK LABYRINT",
+			"tekst": 		"dette er en tekst om epick labyrint spillet",
+			"billede": 		"/assets/epick_labyrint.png",
+			"link": 		"/spil/epick labyrint/p5 skabelon/epick labyrint.html",
+			"type": 		"spil forsøg",
+			"lavet": 		"startede 15 januar 2020. blev færdig senere",
+			"opdateret": 	""
+		},
+
+
+
+		
+		{
+			"navn": 		"BIL SPIL",
+			"tekst": 		"dette er en tekst om bil spil",
+			"billede": 		"/assets/bil_spil.png",
+			"link": 		"/spil/bil spil/bil spil.html",
+			"type": 		"spil forsøg",
+			"lavet": 		"1 december 2019",
+			"opdateret": 	"19 marts 2020"
+		}
+
+		,
+		{
+			"navn": 		"CIRKEL TRÆNING",
 			"tekst": 		"tekst",
-			"billede": 		"/assets/tyngdekraft_simulator.png",
-			"link": 		"/simulationer/tyngdekraft%20simulator/html.html",
-			"type": 		"simulation",
-			"lavet": 		"7 april 2020",
+			"billede": 		"/assets/cirkel_træning.png",
+			"link": 		"/spil/cirkel trening/cirkel trening.html",
+			"type": 		"forsøg",
+			"lavet": 		"13 november 2019",
 			"opdateret": 	""
 		}
 		

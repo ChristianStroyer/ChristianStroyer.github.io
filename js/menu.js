@@ -33,18 +33,6 @@
 
 
 
-var googleAnalyticsString = `
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162467431-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-162467431-1');
-</script>
-
-`
 
 
 var logo = `
@@ -90,8 +78,6 @@ function drawmenu() {
 		}
 	}
 
-	var div = document.createElement("div")
-	div.innerHTML = googleAnalyticsString
 	menu_element.appendChild(div)
 
 

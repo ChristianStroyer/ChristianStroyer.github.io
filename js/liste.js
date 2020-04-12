@@ -35,6 +35,84 @@ var data = {
 			"type": 		"spil forsøg",
 			"lavet": 		"1 december 2019",
 			"opdateret": 	"19 marts 2020"
+		},
+
+
+
+
+//   rekefølge ikke lavet
+
+		{
+			"navn": 		"CIRKEL TRÆNING",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/spil/cirkel trening/cirkel trening.html",
+			"type": 		"forsøg",
+			"lavet": 		"13 november 2019",
+			"opdateret": 	""
+		},
+		{
+			"navn": 		"TOWER DEFENCE TEST TEGN MAP",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/visuelt/tower_defence_test_to_tegn/html.html",
+			"type": 		"visuelt + tower defence test",
+			"lavet": 		"14 marts 2020",
+			"opdateret": 	""
+		},
+		{
+			"navn": 		"TOWER DEFENCE TEST MAP GENERATOR",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/visuelt/tower_defence_test/tower_defence_test.html",
+			"type": 		"visuelt + tower defence test",
+			"lavet": 		"14 marts 2020 ferdig efter TOWER DEFENCE TEST TEGN MAP",
+			"opdateret": 	""
+		},
+		{
+			"navn": 		"POLYGON",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/visuelt/polygon/p5 skabelon/html.html",
+			"type": 		"visuelt",
+			"lavet": 		"19 januar 2020",
+			"opdateret": 	""
+		},
+		{
+			"navn": 		"DOUNOT VIDEO",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/visuelt/videoer/dounot/dounot.html",
+			"type": 		"3d animation + video",
+			"lavet": 		"2 febuar 2020",
+			"opdateret": 	""
+		},
+		{
+			"navn": 		"SLUHS ICE MASKINE VIDEO",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/visuelt/videoer/slush ice maskine/slush ice maskine.html",
+			"type": 		"3d animation + video",
+			"lavet": 		"12 febuar 2020",
+			"opdateret": 	""
+		},
+		{
+			"navn": 		"KORONA SIMULATOR",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/simulationer/syge%20simulator/html.html",
+			"type": 		"simulation",
+			"lavet": 		"1 april 2020",
+			"opdateret": 	""
+		},
+		{
+			"navn": 		"TYNGDEKRAFT SIMULATOR 1",
+			"tekst": 		"tekst",
+			"billede": 		"",
+			"link": 		"/simulationer/tyngdekraft%20simulator/html.html",
+			"type": 		"simulation",
+			"lavet": 		"7 april 2020",
+			"opdateret": 	""
 		}
 		
 	]
@@ -104,7 +182,4 @@ function drawlist() {
 
 
 
-
-
-window.onload = drawlist;
 

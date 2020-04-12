@@ -93,8 +93,8 @@ function drawmenu() {
 
 
 }
-
 window.onload = function() {
 	drawmenu()
 }
+
 

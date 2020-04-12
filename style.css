@@ -42,13 +42,16 @@
 }
 
 #list {
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 #list .listitem {
 	margin: 20px;
 	border-color:black;
 	border-style: solid;
+	width: 800px;
 }
 
 #list .listitem_topbar {
@@ -90,6 +93,10 @@
 	/*border-color:FORESTGREEN;*/
 }
 
+#list .listitem:hover { 
+	background-color: white;
+	cursor: pointer;
+}
 
 
 body {

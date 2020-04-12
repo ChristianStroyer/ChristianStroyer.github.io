@@ -49,14 +49,11 @@ function drawlist() {
 	for(let i = 0; i < data.punkter.length; i++) {
 		let punkt = data.punkter[i]
 
-		let link = document.createElement("a")
-		link.setAttribute("href",data.punkter[i].link)
-		liste_element.appendChild(link)
-
 			let listitem_div = document.createElement("div")
 			listitem_div.setAttribute("class","listitem")
 			listitem_div.setAttribute("id","list_item_" + i)
-			link.appendChild(listitem_div)
+			listitem_div.setAttribute("onClick","window.location.href = '" + data.punkter[i].link+"';" )
+			liste_element.appendChild(listitem_div)
 
 				let listitem_topbar_div = document.createElement("div")
 				listitem_topbar_div.setAttribute("class","listitem_topbar")

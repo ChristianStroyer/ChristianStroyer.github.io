@@ -69,14 +69,17 @@
 
 #list .listitem_topbar_type { 
 	border-color:LIGHTSALMON;
+	background-color: gold;
 }
 
 #list .listitem_topbar_created { 
 	border-color:TOMATO;
+	background-color: gray;
 }
 
 #list .listitem_topbar_updated { 
 	border-color:DARKORANGE;
+	background-color: gray;
 }
 
 #list .listitem_content_text { 

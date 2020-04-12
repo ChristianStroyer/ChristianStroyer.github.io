@@ -81,7 +81,7 @@ var data = {
 			"opdateret": 	""
 		},
 		{
-			"navn": 		"SLUHS ICE MASKINE VIDEO",
+			"navn": 		"SLUSH ICE MASKINE VIDEO",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/slush_ice_425_300.png",
 			"link": 		"/visuelt/videoer/slush ice maskine/slush ice maskine.html",
@@ -90,7 +90,7 @@ var data = {
 			"opdateret": 	""
 		},
 		{
-			"navn": 		"DOUNOT VIDEO",
+			"navn": 		"DONUT VIDEO",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/dounot_video.png",
 			"link": 		"/visuelt/videoer/dounot/dounot.html",
@@ -110,7 +110,7 @@ var data = {
 			"opdateret": 	""
 		},
 		{
-			"navn": 		"EPICK LABYRINT",
+			"navn": 		"EPIC LABYRINT",
 			"tekst": 		"dette er en tekst om epick labyrint spillet",
 			"billede": 		"/assets/epick_labyrint.png",
 			"link": 		"/spil/epick labyrint/p5 skabelon/epick labyrint.html",

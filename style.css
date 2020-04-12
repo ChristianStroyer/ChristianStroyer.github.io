@@ -20,7 +20,6 @@
 	text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 #menu li a:hover {
 	background-color: #111;
 }
@@ -28,8 +27,6 @@
 #menu .active {
 	background-color: #00CC33;
 }
-
-
 
 
 #list *{
@@ -108,20 +105,15 @@ body {
 
   width: 100%;
   position: fixed;        
-  /*background: red;*/
-  /*background: white;*/
-    background-color: rgb(150,150,150);
+  background-color: rgb(150,150,150);
   padding: 0px 0;
   color: #fff;
   top: 0;
 }
 
 #content {
+  box-sizing: border-box;
   margin-top: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
   width: 100%;
-  /*background: blue;*/
-  /*  background-color: rgb(150,150,150);*/
   color: black; 
 }

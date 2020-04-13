@@ -16,28 +16,35 @@ var knab_auto_play_to
 
 
 function setup () {
-	createCanvas(600,400).parent('content')
 
 	bold = new Bold
 	spiller_et = new Spiller_et(bold)
 	spiller_to = new Spiller_to(bold)
 
-
-
-
+	let p = createElement("p")
+	p.parent('content')
 
 
 	knab_auto_play_et = createButton("auto_play");
-	knab_auto_play_et.position(30,150)
+	//knab_auto_play_et.position(30,150)
 	knab_auto_play_et.mousePressed(invert_auto_play_et)
+	knab_auto_play_et.parent(p)
 	
-	knab_auto_play_to = createButton("auto_play");
-	knab_auto_play_to.position(510,150)
-	knab_auto_play_to.mousePressed(invert_auto_play_to)
-
+	createElement('span',"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").parent(p)
+	
 	knab_crazy_collor = createButton("crazy_collor");
-	knab_crazy_collor.position(260,150)
+	//knab_crazy_collor.position(260,150)
 	knab_crazy_collor.mousePressed(invert_crazy_collor)
+	knab_crazy_collor.parent(p)
+
+	createElement('span',"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").parent(p)
+
+	knab_auto_play_to = createButton("auto_play");
+	//knab_auto_play_to.position(510,150)
+	knab_auto_play_to.mousePressed(invert_auto_play_to)
+	knab_auto_play_to.parent(p)
+
+	createCanvas(600,400).parent('content')
 
 }
 

@@ -41,26 +41,39 @@ window.onload = function() {
 
 <body>
 
-
+<div id="page">
+	<div id="top">
+		<div id="menu"></div>
+	</div>
+	<div id="bottom">
+		<div id="left">
+			<div id="sidemenu">
+				<div class="sidemenuitem active" onClick="tryk_sidemenu('Alle');">Alle</div>
+				<div class="sidemenuitem" onClick="tryk_sidemenu('Simulation');">Simulation</div>
+				<div class="sidemenuitem" onClick="tryk_sidemenu('Spil');">Spil</div>
+				<div class="sidemenuitem" onClick="tryk_sidemenu('Forsøg');">Forsøg</div>
+			</div>
+		</div>
+		<div id="right">
+			<div id="content">
+				<div id="list">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <!-- inset menu --> 
 <div id="menu"></div>
 <!-- inset menu --> 
 
+<script>
 
-<div id="content">
-
-
-	<div id="list"> 
-	
-			
-	</div>
-
-
-
-
-</div>
+function tryk_sidemenu( str ) {
+console.log("Sidemenu tryk: "+str)
+}
+</script>
 
 
 </body>

@@ -7,14 +7,31 @@ var data = {
 
 
 
-//   rekefølge ikke lavet
 
 		
 		
+		/* alle søgeord
+
+		alle
+
+		simulationer
+
+		visuelt
+
+		forsøg
+
+		tower defence test
+
+		spil forsøg
+
+		3d animation
+
+		video
+
+
 		
-		
-		
-		
+		*/
+
 		/*{
 			"navn": 		"FANEN ALLE PROJEKTER",
 			"tekst": 		"tekst",
@@ -31,7 +48,8 @@ var data = {
 			"link": 		"/simulationer/tyngdekraft%20simulator/html.html",
 			"type": 		"simulation",
 			"lavet": 		"7 april 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","simulationer"]
 		},
 		{
 			"navn": 		"KORONA SIMULATOR",
@@ -40,7 +58,8 @@ var data = {
 			"link": 		"/simulationer/syge%20simulator/html.html",
 			"type": 		"simulation",
 			"lavet": 		"1 april 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","simulationer"]
 		},
 
 		{
@@ -50,7 +69,8 @@ var data = {
 			"link": 		"/visuelt/tower_defence_test_to_tegn/html.html",
 			"type": 		"visuelt + tower defence test",
 			"lavet": 		"14 marts 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","visuelt","forsøg","tower defence test"]
 		},
 		{
 			"navn": 		"TOWER DEFENCE TEST MAP GENERATOR",
@@ -59,7 +79,8 @@ var data = {
 			"link": 		"/visuelt/tower_defence_test/tower_defence_test.html",
 			"type": 		"visuelt + tower defence test",
 			"lavet": 		"14 marts 2020 ferdig efter TOWER DEFENCE TEST TEGN MAP",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","visuelt","forsøg","tower defence test"]
 		},
 		{
 			"navn": 		"SHOOTER GAME",
@@ -68,7 +89,8 @@ var data = {
 			"link": 		"/spil/shooter game/html.html",
 			"type": 		"spil forsøg",
 			"lavet": 		"11 marts 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","spil forsøg","forsøg"]
 		},
 
 		{
@@ -78,7 +100,8 @@ var data = {
 			"link": 		"/spil/pingpong/pingpong.html",
 			"type": 		"spil forsøg",
 			"lavet": 		"19 febuar 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","spil forsøg","forsøg"]
 		},
 		{
 			"navn": 		"SLUSH ICE MASKINE VIDEO",
@@ -87,7 +110,8 @@ var data = {
 			"link": 		"/visuelt/videoer/slush ice maskine/slush ice maskine.html",
 			"type": 		"3d animation + video",
 			"lavet": 		"12 febuar 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","3d animation","video"]
 		},
 		{
 			"navn": 		"DONUT VIDEO",
@@ -96,7 +120,8 @@ var data = {
 			"link": 		"/visuelt/videoer/dounot/dounot.html",
 			"type": 		"3d animation + video",
 			"lavet": 		"2 febuar 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","3d animation","video"]
 		},
 
 
@@ -107,16 +132,18 @@ var data = {
 			"link": 		"/visuelt/polygon/p5 skabelon/html.html",
 			"type": 		"visuelt",
 			"lavet": 		"19 januar 2020",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","visuelt","forsøg"]
 		},
 		{
 			"navn": 		"EPIC LABYRINT",
-			"tekst": 		"dette er en tekst om epick labyrint spillet",
+			"tekst": 		"dette spil er et labyrint spil hvor man skal komme fra start (den lilla boks) til mål (den grønne boks) ved at bruge W, A, S og D knaberne på computeren",
 			"billede": 		"/assets/epick_labyrint.png",
 			"link": 		"/spil/epick labyrint/p5 skabelon/epick labyrint.html",
 			"type": 		"spil forsøg",
 			"lavet": 		"startede 15 januar 2020. blev færdig senere",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","spil forsøg","forsøg"]
 		},
 
 
@@ -129,7 +156,8 @@ var data = {
 			"link": 		"/spil/bil spil/bil spil.html",
 			"type": 		"spil forsøg",
 			"lavet": 		"1 december 2019",
-			"opdateret": 	"19 marts 2020"
+			"opdateret": 	"19 marts 2020",
+			"søgeord": 		["alle","spil forsøg","forsøg"]
 		}
 
 		,
@@ -140,7 +168,8 @@ var data = {
 			"link": 		"/spil/cirkel trening/cirkel trening.html",
 			"type": 		"forsøg",
 			"lavet": 		"13 november 2019",
-			"opdateret": 	""
+			"opdateret": 	"",
+			"søgeord": 		["alle","forsøg"]
 		}
 		
 	]

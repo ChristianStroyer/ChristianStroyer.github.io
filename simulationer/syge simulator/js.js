@@ -16,7 +16,9 @@ var input_tid_til_rask
 
 function setup () {
 
-var td1 = createElement('td','antal personer');
+
+
+	var td1 = createElement('td','antal personer');
 	var td2 = createElement('td','størelse');
 	var td3 = createElement('td','tid til imunitet');
 	var tr1 = createElement('tr');
@@ -74,13 +76,9 @@ var td1 = createElement('td','antal personer');
 	table.child(tr1)
 	table.child(tr2)
 	table.child(tr3)
+	table.parent('content');
 
-
-
-
-	createCanvas(500,500)
-
-
+	createCanvas(500,500).parent('content')	
 
 }
 

@@ -14,7 +14,7 @@ function setup () {
 	//var windowx = windowWidth - 25
 	
 
-	createCanvas(750, 750)
+	createCanvas(750, 750).parent('content')
 
 
 	//objekter.push(new objekt(createVector(random(750, 750),random(750, 750)),createVector(0,0),1000000,0))

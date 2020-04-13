@@ -1,11 +1,8 @@
 	var menu = {
 					"menupunkter": [ 
+										
 										{
 											"link": "index.html",
-											"navn":	"introduktion",
-										},
-										{
-											"link": "alle_projekter.html",
 											"navn":	"alle projekter",
 										},
 										{

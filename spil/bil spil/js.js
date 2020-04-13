@@ -20,7 +20,7 @@ function preload(){
 
 
 function setup () {
-	createCanvas(500,600)
+	createCanvas(500,600).parent('content')
 	bold = new Bold(250,500)
 	obstacle = new Obstacle();
 }

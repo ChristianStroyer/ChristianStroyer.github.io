@@ -16,7 +16,7 @@ var knab_auto_play_to
 
 
 function setup () {
-	createCanvas(600,400)
+	createCanvas(600,400).parent('content')
 
 	bold = new Bold
 	spiller_et = new Spiller_et(bold)

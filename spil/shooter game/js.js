@@ -22,7 +22,7 @@ var enemy_Shot = [];
 
 
 function setup () {
-	createCanvas(500,500)
+	createCanvas(500,500).parent('content')
 	player = new Player(250,400)
 
 	for(var i = 0; i < enemy_list.length; i++) {

@@ -13,7 +13,7 @@ var monster
 var monster_findes = false
 
 function setup () {
-	createCanvas(500,500)
+	createCanvas(500,500).parent('content')
  
 
 	

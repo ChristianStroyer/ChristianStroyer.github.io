@@ -16,7 +16,7 @@ let highscore = 0;
 var player;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(600, 600).parent('content');
   cols = floor(width / w);
   rows = floor(height / w);
 

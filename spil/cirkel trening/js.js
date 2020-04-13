@@ -2,7 +2,7 @@ console.log ("Working")
 var bold;
 
 function setup () {
-	createCanvas(1000,1000)
+	createCanvas(1000,1000).parent('content')
 	bold = new Bold();
 
 }

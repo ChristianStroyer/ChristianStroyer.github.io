@@ -11,7 +11,7 @@ var vej = []
 var monster
 
 function setup () {
-	createCanvas(500,500)
+	createCanvas(500,500).parent('content')
  	
 
 

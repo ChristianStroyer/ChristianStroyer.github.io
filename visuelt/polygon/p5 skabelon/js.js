@@ -5,7 +5,7 @@ var kordinats  = [30 + x, 20 + y, 85 + x, 20 + y, 85 + x, 74 + y , 50 + x , 50 +
 var plus_minus = [true ,true ,true ,true ,true ,true ,true ,true ,true ,true]
 
 function setup () {
-	createCanvas(500,500)
+	createCanvas(500,500).parent('content')
 }
 
 function draw () {

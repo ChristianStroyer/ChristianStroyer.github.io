@@ -88,7 +88,7 @@ class Obstacle {
 	show() {
 		noStroke();
 		fill(0)
-		ellipse(this.pos.x, this.pos.y, this.s, this.s)
+		ellipse(this.pos.x, this.pos.y, this.s, this.s/2)
 	}
 
 	move () {

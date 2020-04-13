@@ -78,9 +78,6 @@ function drawmenu() {
 		}
 	}
 
-	menu_element.appendChild(div)
-
-
 
 }
 window.onload = function() {

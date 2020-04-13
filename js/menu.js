@@ -4,26 +4,32 @@
 										{
 											"link": "index.html",
 											"navn":	"alle projekter",
+											"mappe_navn": "NoGet_dEr_aLdRiG-BlIvEr_sKrEvEt"
 										},
 										{
 											"link": "spil.html",
 											"navn":	"spil",
+											"mappe_navn": "spil"
 										},
 										{
 											"link": "visuelt.html",
 											"navn":	"visuelt",
+											"mappe_navn": "visuelt"
 										},
 										{
 											"link": "bog_uddrag.html",
 											"navn":	"bog uddrag",
+											"mappe_navn": "bog_uddrrag"
 										},
 										{
 											"link": "simulationer.html",
 											"navn":	"simulationer",
+											"mappe_navn": "simulationer"
 										},
 										{
 											"link": "andet.html",
 											"navn":	"andet",
+											"mappe_navn": "NoGet_dEr_aLdRiG-BlIvEr_sKrEvEt"
 										}
 									]
 				}
@@ -45,7 +51,9 @@ function drawmenu() {
 	var urlsplit = url.split('/')
 	var lastPartOfUrl = urlsplit[urlsplit.length-1]
 
-
+if (lastPartOfUrl == ""){
+	lastPartOfUrl = "index.html"
+}
 
 
 	var menu_element = document.getElementById("menu")
@@ -72,7 +80,18 @@ function drawmenu() {
 
 		if (lastPartOfUrl == menupunkt.link) {
 			a.setAttribute("class","active")
+		} else {
+
+		for(var j = 0; j < urlsplit.length; j++) {
+
+			if (urlsplit[j] == menu.menupunkter[i].mappe_navn){
+				a.setAttribute("class","active")
+			}
+
 		}
+
+	}
+
 	}
 
 

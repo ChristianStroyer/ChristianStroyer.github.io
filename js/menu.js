@@ -7,24 +7,9 @@
 											"mappe_navn": "NoGet_dEr_aLdRiG-BlIvEr_sKrEvEt"
 										},
 										{
-											"link": "spil.html",
-											"navn":	"spil",
-											"mappe_navn": "spil"
-										},
-										{
-											"link": "visuelt.html",
-											"navn":	"visuelt",
-											"mappe_navn": "visuelt"
-										},
-										{
 											"link": "bog_uddrag.html",
 											"navn":	"bog uddrag",
 											"mappe_navn": "bog_uddrrag"
-										},
-										{
-											"link": "simulationer.html",
-											"navn":	"simulationer",
-											"mappe_navn": "simulationer"
 										},
 										{
 											"link": "andet.html",

@@ -10,7 +10,7 @@ var data = {
 
 		
 		
-		/* alle søgeord
+		/* alle keywords
 
 		alle
 
@@ -28,8 +28,8 @@ var data = {
 
 		video
 
-
 		
+
 		*/
 
 		/*{
@@ -49,7 +49,7 @@ var data = {
 			"type": 		"simulation",
 			"lavet": 		"7 april 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","simulationer"]
+			"keywords": 	["alle","simulationer"]
 		},
 		{
 			"navn": 		"KORONA SIMULATOR",
@@ -59,7 +59,7 @@ var data = {
 			"type": 		"simulation",
 			"lavet": 		"1 april 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","simulationer"]
+			"keywords": 	["alle","simulationer"]
 		},
 
 		{
@@ -70,7 +70,7 @@ var data = {
 			"type": 		"visuelt + tower defence test",
 			"lavet": 		"14 marts 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","visuelt","forsøg","tower defence test"]
+			"keywords": 	["alle","visuelt","forsøg","tower defence test"]
 		},
 		{
 			"navn": 		"TOWER DEFENCE TEST MAP GENERATOR",
@@ -80,7 +80,7 @@ var data = {
 			"type": 		"visuelt + tower defence test",
 			"lavet": 		"14 marts 2020 ferdig efter TOWER DEFENCE TEST TEGN MAP",
 			"opdateret": 	"",
-			"søgeord": 		["alle","visuelt","forsøg","tower defence test"]
+			"keywords": 	["alle","visuelt","forsøg","tower defence test"]
 		},
 		{
 			"navn": 		"SHOOTER GAME",
@@ -90,7 +90,7 @@ var data = {
 			"type": 		"spil forsøg",
 			"lavet": 		"11 marts 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","spil forsøg","forsøg"]
+			"keywords": 	["alle","spil forsøg","forsøg"]
 		},
 
 		{
@@ -101,7 +101,7 @@ var data = {
 			"type": 		"spil forsøg",
 			"lavet": 		"19 febuar 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","spil forsøg","forsøg"]
+			"keywords": 	["alle","spil forsøg","forsøg"]
 		},
 		{
 			"navn": 		"SLUSH ICE MASKINE VIDEO",
@@ -111,7 +111,7 @@ var data = {
 			"type": 		"3d animation + video",
 			"lavet": 		"12 febuar 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","3d animation","video"]
+			"keywords": 	["alle","3d animation","video"]
 		},
 		{
 			"navn": 		"DONUT VIDEO",
@@ -121,7 +121,7 @@ var data = {
 			"type": 		"3d animation + video",
 			"lavet": 		"2 febuar 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","3d animation","video"]
+			"keywords": 	["alle","3d animation","video"]
 		},
 
 
@@ -133,7 +133,7 @@ var data = {
 			"type": 		"visuelt",
 			"lavet": 		"19 januar 2020",
 			"opdateret": 	"",
-			"søgeord": 		["alle","visuelt","forsøg"]
+			"keywords": 	["alle","visuelt","forsøg"]
 		},
 		{
 			"navn": 		"EPIC LABYRINT",
@@ -143,7 +143,7 @@ var data = {
 			"type": 		"spil forsøg",
 			"lavet": 		"startede 15 januar 2020. blev færdig senere",
 			"opdateret": 	"",
-			"søgeord": 		["alle","spil forsøg","forsøg"]
+			"keywords": 	["alle","spil forsøg","forsøg"]
 		},
 
 
@@ -157,7 +157,7 @@ var data = {
 			"type": 		"spil forsøg",
 			"lavet": 		"1 december 2019",
 			"opdateret": 	"19 marts 2020",
-			"søgeord": 		["alle","spil forsøg","forsøg"]
+			"keywords": 	["alle","spil forsøg","forsøg"]
 		}
 
 		,
@@ -169,70 +169,98 @@ var data = {
 			"type": 		"forsøg",
 			"lavet": 		"13 november 2019",
 			"opdateret": 	"",
-			"søgeord": 		["alle","forsøg"]
+			"keywords": 	["alle","forsøg"]
 		}
 		
 	]
 }
 
 
+var sort = ["alle"]
+
 function drawlist() {
 
+
+
+
+
+
+
+
+
 	let liste_element = document.getElementById("list")
-	
+	liste_element.innerHTML = ""
 	
 	for(let i = 0; i < data.punkter.length; i++) {
-		let punkt = data.punkter[i]
 
-			let listitem_div = document.createElement("div")
-			listitem_div.setAttribute("class","listitem")
-			listitem_div.setAttribute("id","list_item_" + i)
-			listitem_div.setAttribute("onClick","window.location.href = '" + data.punkter[i].link+"';" )
-			liste_element.appendChild(listitem_div)
+		let tegn_menupunkt=false;
+		
+		for(let j = 0; j < data.punkter[i].keywords.length; j++) {
+			for(let k = 0; k < sort.length; k++) { 
+				if (data.punkter[i].keywords[j] == sort[k]){
+					tegn_menupunkt = true
+					break
+				}
+			}
+		}
 
-				let listitem_topbar_div = document.createElement("div")
-				listitem_topbar_div.setAttribute("class","listitem_topbar")
-				listitem_div.appendChild(listitem_topbar_div)
 
-					let listitem_topbar_type_div = document.createElement("div")
-					listitem_topbar_type_div.setAttribute("class","listitem_topbar_type")
-					listitem_topbar_div.appendChild(listitem_topbar_type_div)
 
-						listitem_topbar_type_div.innerHTML = "<b>Type:</b>" + data.punkter[i].type
 
+		if ( tegn_menupunkt ){
+
+					let listitem_div = document.createElement("div")
+					listitem_div.setAttribute("class","listitem")
+					listitem_div.setAttribute("id","list_item_" + i)
+					listitem_div.setAttribute("onClick","window.location.href = '" + data.punkter[i].link+"';" )
+					liste_element.appendChild(listitem_div)
+
+						let listitem_topbar_div = document.createElement("div")
+						listitem_topbar_div.setAttribute("class","listitem_topbar")
+						listitem_div.appendChild(listitem_topbar_div)
+
+							let listitem_topbar_type_div = document.createElement("div")
+							listitem_topbar_type_div.setAttribute("class","listitem_topbar_type")
+							listitem_topbar_div.appendChild(listitem_topbar_type_div)
+
+								listitem_topbar_type_div.innerHTML = "<b>Type:</b>" + data.punkter[i].type
+
+							
+							let listitem_topbar_created_div = document.createElement("div")
+							listitem_topbar_created_div.setAttribute("class","listitem_topbar_created")
+							listitem_topbar_div.appendChild(listitem_topbar_created_div)
+
+								listitem_topbar_created_div.innerHTML = "<b>Lavet:</b>" + data.punkter[i].lavet
+							
+
+
+							if (data.punkter[i].opdateret){
+							let listitem_topbar_updated_div = document.createElement("div")
+							listitem_topbar_updated_div.setAttribute("class","listitem_topbar_updated")
+							listitem_topbar_div.appendChild(listitem_topbar_updated_div)
+
+								listitem_topbar_updated_div.innerHTML = "<b>Opdateret:</b>" + data.punkter[i].opdateret
+							}
+
+						let listitem_content_div = document.createElement("div")
+						listitem_content_div.setAttribute("class","listitem_content")
+						listitem_div.appendChild(listitem_content_div)
+
+							let listitem_content_text_div = document.createElement("div")
+							listitem_content_text_div.setAttribute("class","listitem_content_text")
+							listitem_content_div.appendChild(listitem_content_text_div)
+
+								listitem_content_text_div.innerHTML = "<h1><b><u>" + data.punkter[i].navn + "</u></b></h1>" + "<p>" + data.punkter[i].tekst + "</p>"
+
+
+							let listitem_content_image_div = document.createElement("div")
+							listitem_content_image_div.setAttribute("class","listitem_content_image")
+							listitem_content_div.appendChild(listitem_content_image_div)
+
+								listitem_content_image_div.innerHTML = "<img src=" + data.punkter[i].billede + " width='425' height='300'" + ">"
 					
-					let listitem_topbar_created_div = document.createElement("div")
-					listitem_topbar_created_div.setAttribute("class","listitem_topbar_created")
-					listitem_topbar_div.appendChild(listitem_topbar_created_div)
+				}
 
-						listitem_topbar_created_div.innerHTML = "<b>Lavet:</b>" + data.punkter[i].lavet
-					
-
-
-					if (data.punkter[i].opdateret){
-					let listitem_topbar_updated_div = document.createElement("div")
-					listitem_topbar_updated_div.setAttribute("class","listitem_topbar_updated")
-					listitem_topbar_div.appendChild(listitem_topbar_updated_div)
-
-						listitem_topbar_updated_div.innerHTML = "<b>Opdateret:</b>" + data.punkter[i].opdateret
-					}
-
-				let listitem_content_div = document.createElement("div")
-				listitem_content_div.setAttribute("class","listitem_content")
-				listitem_div.appendChild(listitem_content_div)
-
-					let listitem_content_text_div = document.createElement("div")
-					listitem_content_text_div.setAttribute("class","listitem_content_text")
-					listitem_content_div.appendChild(listitem_content_text_div)
-
-						listitem_content_text_div.innerHTML = "<h1><b><u>" + data.punkter[i].navn + "</u></b></h1>" + "<p>" + data.punkter[i].tekst + "</p>"
-
-
-					let listitem_content_image_div = document.createElement("div")
-					listitem_content_image_div.setAttribute("class","listitem_content_image")
-					listitem_content_div.appendChild(listitem_content_image_div)
-
-						listitem_content_image_div.innerHTML = "<img src=" + data.punkter[i].billede + " width='425' height='300'" + ">"
 	}
 }
 
@@ -240,3 +268,23 @@ function drawlist() {
 
 
 
+function alle_keywords(){
+	sort = ["alle"]
+	drawlist()
+}
+
+
+function simulation_keywords(){
+	sort = ["simulationer"]
+	drawlist()
+}
+
+function spil_keywords(){
+	sort = ["spil forsøg"]
+	drawlist()
+}
+
+function forsøg_keywords(){
+	sort = ["forsøg","spil forsøg"]
+	drawlist()
+}

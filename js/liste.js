@@ -63,6 +63,16 @@ var data = {
 		},
 
 		{
+			"navn": 		"TRACKING FORSØG VIDEO",
+			"tekst": 		"tekst",
+			"billede": 		"/assets/tracking_forsøg.png",
+			"link": 		"/visuelt/videoer/tracking forsøg/tracking_forsøg.html",
+			"type": 		"3d animation + video",
+			"lavet": 		"22 marts 2020",
+			"opdateret": 	"",
+			"keywords": 	["alle","3d animation","video"]
+		},
+		{
 			"navn": 		"TOWER DEFENCE TEST TEGN MAP",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/tower_defence_tegn_map.png",

@@ -2,14 +2,6 @@ var data = {
 	"punkter": [
 		
 		
-		
-
-
-
-
-
-		
-		
 		/* alle keywords
 
 		alle
@@ -28,9 +20,21 @@ var data = {
 
 		video
 
-		
-
+		bilede
 		*/
+
+
+
+		{
+			"navn": 		"DRAGE MODELERING",
+			"tekst": 		"tekst",
+			"billede": 		"/assets/dragon%20render%20cycles%201.png",
+			"link": 		"/visuelt/blender render/drage modelering/drage modelering.html",
+			"type": 		"3d animation + video",
+			"lavet": 		"21. ‎april ‎2020",
+			"opdateret": 	"8. ‎maj ‎2020",
+			"keywords": 	["alle","visuelt","bilede"]
+		},
 
 		/*{
 			"navn": 		"FANEN ALLE PROJEKTER",

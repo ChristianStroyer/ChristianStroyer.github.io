@@ -24,7 +24,16 @@ var data = {
 		*/
 
 
-
+		{
+			"navn": 		"NEMME HUSE",
+			"tekst": 		"tekst",
+			"billede": 		"/assets/nemme%20huse.png",
+			"link": 		"/visuelt/blender%20render/nemme%20huse/nemme%20huse.html",
+			"type": 		"3d animation + video",
+			"lavet": 		"24. ‎april ‎2020",
+			"opdateret": 	"8. ‎maj ‎2020",
+			"keywords": 	["alle","visuelt","bilede"]
+		},
 		{
 			"navn": 		"DRAGE MODELERING",
 			"tekst": 		"tekst",

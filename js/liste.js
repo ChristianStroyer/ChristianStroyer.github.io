@@ -23,13 +23,22 @@ var data = {
 		bilede
 		*/
 
-
+		{
+			"navn": 		"GUN TURET",
+			"tekst": 		"tekst",
+			"billede": 		"/assets/gun_turet.png",
+			"link": 		"/visuelt/blender%20render/gun%20turet/gun_turet.html",
+			"type": 		"3d animation + visuelt",
+			"lavet": 		"6. ‎august ‎2020",
+			"opdateret": 	"",
+			"keywords": 	["alle","visuelt","bilede"]
+		},
 		{
 			"navn": 		"NEMME HUSE",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/nemme%20huse.png",
 			"link": 		"/visuelt/blender%20render/nemme%20huse/nemme%20huse.html",
-			"type": 		"3d animation + video",
+			"type": 		"3d animation + visuelt",
 			"lavet": 		"24. ‎april ‎2020",
 			"opdateret": 	"8. ‎maj ‎2020",
 			"keywords": 	["alle","visuelt","bilede"]
@@ -39,7 +48,7 @@ var data = {
 			"tekst": 		"tekst",
 			"billede": 		"/assets/dragon%20render%20cycles%201.png",
 			"link": 		"/visuelt/blender render/drage modelering/drage modelering.html",
-			"type": 		"3d animation + video",
+			"type": 		"3d animation + visuelt",
 			"lavet": 		"21. ‎april ‎2020",
 			"opdateret": 	"8. ‎maj ‎2020",
 			"keywords": 	["alle","visuelt","bilede"]

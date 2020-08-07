@@ -54,6 +54,16 @@ var data = {
 			"keywords": 	["alle","visuelt","bilede"]
 		},
 
+		{
+			"navn": 		"LERNING UNITY",
+			"tekst": 		"",
+			"billede": 		"/assets/lerning_unity.png",
+			"link": 		"/spil/unity/lerning unity/index.html",
+			"type": 		"spil forsøg",
+			"lavet": 		"30 april 2020",
+			"opdateret": 	"",
+			"keywords": 	["alle","spil forsøg","forsøg"]
+		},
 		/*{
 			"navn": 		"FANEN ALLE PROJEKTER",
 			"tekst": 		"tekst",

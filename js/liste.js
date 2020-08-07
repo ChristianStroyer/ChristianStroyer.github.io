@@ -23,6 +23,17 @@ var data = {
 		bilede
 		*/
 
+
+		{
+			"navn": 		"ROBOT EDERKOP",
+			"tekst": 		"",
+			"billede": 		"/assets/robot_ederlop.png",
+			"link": 		"/spil/unity/ederkop/index.html",
+			"type": 		"spil forsøg",
+			"lavet": 		"7 august 2020",
+			"opdateret": 	"",
+			"keywords": 	["alle","spil forsøg","forsøg"]
+		},
 		{
 			"navn": 		"GUN TURET",
 			"tekst": 		"tekst",

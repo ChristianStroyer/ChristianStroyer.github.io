@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Sebastians website</title>
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+
+
+
+<!-- menu kode --> 
+<script type="text/javascript" src="/js/menu.js" ></script>
+<!-- menu kode -->
+
+
+</head>
+
+
+<body>
+
+<div id="page">
+  <div id="top">
+    <div id="menu"></div>
+  </div>
+  <div id="bottom">
+    <div id="left">
+    </div>
+    <div id="right">
+      <div id="content">
+
+        <p> brug "w", "a", "s", "d" eller piletasterne for at bevæge roboten.</p>
+
+          <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+          <script src="Build/build.loader.js"></script>
+          <script>
+            createUnityInstance(document.querySelector("#unity-canvas"), {
+              dataUrl: "Build/build.data",
+              frameworkUrl: "Build/build.framework.js",
+              codeUrl: "Build/build.wasm",
+              streamingAssetsUrl: "StreamingAssets",
+              companyName: "sebastians website",
+              productName: "robo spider",
+              productVersion: "0.1",
+            });
+          </script>
+      </div>
+    </div>
+  </div>
+</div> 
+
+</body>
+</html>

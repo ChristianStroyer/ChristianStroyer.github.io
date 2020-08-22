@@ -26,8 +26,8 @@ var data = {
 	{
 			"navn": 		"SI FI TUPES",
 			"tekst": 		"tekst",
-			"billede": 		"/assets/si fi tupes.png",
-			"link": 		"/visuelt/blender%20render/si fi tupes/si fi tupes.html",
+			"billede": 		"/assets/si%20fi%20tupes.png",
+			"link": 		"/visuelt/blender%20render/si%20fi%20tupes/si%20fi%20tupes.html",
 			"type": 		"3d animation + visuelt",
 			"lavet": 		"22. ‎august ‎2020",
 			"opdateret": 	"",

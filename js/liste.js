@@ -24,7 +24,7 @@ var data = {
 		*/
 
 	{
-			"navn": 		"SI FI TUPES",
+			"navn": 		"SCIFI TUBES",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/si%20fi%20tupes.png",
 			"link": 		"/visuelt/blender%20render/si%20fi%20tupes/si%20fi%20tupes.html",
@@ -34,7 +34,7 @@ var data = {
 			"keywords": 	["alle","visuelt","bilede"]
 		},
 		{
-			"navn": 		"ROBOT EDERKOP",
+			"navn": 		"ROBOT-EDDERKOP",
 			"tekst": 		"",
 			"billede": 		"/assets/robot_ederlop.png",
 			"link": 		"/spil/unity/ederkop/index.html",
@@ -44,7 +44,7 @@ var data = {
 			"keywords": 	["alle","spil forsøg","forsøg"]
 		},
 		{
-			"navn": 		"GUN TURET",
+			"navn": 		"GUNTURRET",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/gun_turet.png",
 			"link": 		"/visuelt/blender%20render/gun%20turet/gun_turet.html",
@@ -64,7 +64,7 @@ var data = {
 			"keywords": 	["alle","visuelt","bilede"]
 		},
 		{
-			"navn": 		"DRAGE MODELERING",
+			"navn": 		"DRAGE-MODELERING",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/dragon%20render%20cycles%201.png",
 			"link": 		"/visuelt/blender render/drage modelering/drage modelering.html",
@@ -75,7 +75,7 @@ var data = {
 		},
 
 		{
-			"navn": 		"LERNING UNITY",
+			"navn": 		"LEARNING UNITY",
 			"tekst": 		"",
 			"billede": 		"/assets/lerning_unity.png",
 			"link": 		"/spil/unity/lerning unity/index.html",
@@ -104,7 +104,7 @@ var data = {
 			"keywords": 	["alle","simulationer"]
 		},
 		{
-			"navn": 		"KORONA SIMULATOR",
+			"navn": 		"CORONA SIMULATOR",
 			"tekst": 		"tekst",
 			"billede": 		"/assets/syge_simulator.png",
 			"link": 		"/simulationer/syge%20simulator/html.html",

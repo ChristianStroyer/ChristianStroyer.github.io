@@ -3,18 +3,19 @@ console.log ("Working")
 console.log("Working")
 
 function setup () {
-	createCanvas(500,500)
+	createCanvas(750,500)
 }
 
 function draw () {
-
-	background(120)
-
-
+	
+	
+	opdate_wiew()
 }
 
 
-
+function opdate_wiew () {
+	background(120)
+}
 
 
 

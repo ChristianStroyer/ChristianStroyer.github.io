@@ -2,7 +2,8 @@ console.log ("Working")
 
 
 var books = {
-	//	bog_navn serie_navn forfatter	[dato,sidetal , dato,sidetal , dato,sidetal]
+	//	bog_navn serie_navn forfatter	[dato,sidetal , dato,sidetal , dato,sidetal
+	
 }
 
 

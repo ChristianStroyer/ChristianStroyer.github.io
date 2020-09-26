@@ -75,9 +75,11 @@ function opdate_wiew () {
 		let slutdato = days_betwin_dates(test_jason.books[i].sider[test_jason.books[i].sider.length-1].dato,first_shown_date)
 		let graf_midt = (startdato + slutdato) / 2
 
-		textSize(16)
+		textSize(15)
 		textAlign(CENTER);
-		text("wasd", graf_midt * intarval_sice, 475);
+		text(test_jason.books[i].title, graf_midt * intarval_sice, 465);
+		text(test_jason.books[i].serie, graf_midt * intarval_sice, 485);
+
 	}
 
 }

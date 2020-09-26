@@ -41,7 +41,7 @@ var test_jason = {
 
 		{"title":"bog_1",		"serie":"serie_1",		"startdato":"2020-08-14",	"slutdato":"2020-08-20",	"sider":[{"side":0,"dato":"2020-08-14"},{"side":30,"dato":"2020-08-15"},{"side":70,"dato":"2020-08-16"},{"side":100,"dato":"2020-08-17"},{"side":150,"dato":"2020-08-18"},{"side":180,"dato":"2020-08-19"},{"side":200,"dato":"2020-08-20"}]},
 		{"title":"bog_2",		"serie":"serie_1",		"startdato":"2020-08-20",	"slutdato":"2020-08-24",	"sider":[{"side":0,"dato":"2020-08-20"},{"side":150,"dato":"2020-08-24"}]},
-		{"title":"bog_3",		"serie":"serie_2",		"startdato":"2020-08-24",	"slutdato":"2020-08-29",	"sider":[{"side":0,"dato":"2020-08-24"},{"side":75,"dato":"2020-08-25"},{"side":220,"dato":"2020-08-29"}]}
+		{"title":"bog_3",		"serie":"serie_2",		"startdato":"2020-08-24",	"slutdato":"2020-08-29",	"sider":[{"side":0,"dato":"2020-08-24"},{"side":25,"dato":"2020-08-25"},{"side":220,"dato":"2020-08-29"}]}
 
 	]
 
@@ -51,7 +51,7 @@ var first_shown_date = "2020-08-10"
 var intarval_sice = 25
 
 
-var visningsmode = "side kommet til" // "side kommet til", "sider læst"
+var visningsmode = "sider læst" // "side kommet til", "sider læst"
 
 
 
@@ -63,7 +63,9 @@ function setup () {
 
 function draw () {
 
-	
+	button = createButton("skift visnings mode");
+	button.position(50, 50);
+	button.mousePressed(change_visningsmode);
 	
 }
 
@@ -86,7 +88,7 @@ function opdate_wiew () {
 				y = 450 - test_jason.books[i].sider[j].side
 			}else if(visningsmode == "sider læst"){
 				x = days_betwin_dates(test_jason.books[i].sider[j].dato,first_shown_date)*intarval_sice
-				y = 450 - (test_jason.books[i].sider[j].side - test_jason.books[i].sider[j-1].side)
+				y = 450 - (test_jason.books[i].sider[j].side - test_jason.books[i].sider[j-1].side) / days_betwin_dates(test_jason.books[i].sider[j].dato,test_jason.books[i].sider[j-1].dato)
 			}else{
 				console.alert("fejl")
 			}
@@ -129,4 +131,14 @@ function days_betwin_dates (date_1, date_2) {
 	return (day_1 - day_2)
 }
 
+
+function change_visningsmode(){
+	if(visningsmode == "side kommet til"){
+		visningsmode = "sider læst"
+	}else if (visningsmode == "sider læst"){
+		visningsmode = "side kommet til"
+	}
+	
+	opdate_wiew()
+}
 

@@ -33,7 +33,7 @@ var test_jason = {
 }
 
 var first_shown_date = "2020-08-10"
-
+var intarval_sice = 25
 
 
 
@@ -55,16 +55,29 @@ function opdate_wiew () {
 
 	for (var i = 0; i < test_jason.books.length; i++) {
 
-		fill(color(Math.floor(Math.random() * 256),Math.floor(Math.random() * 256),Math.floor(Math.random() * 256)))
+
+		//graffer
+		fill(color(Math.floor(Math.random() * 156),Math.floor(Math.random() * 156),Math.floor(Math.random() * 156)))
 		beginShape()
 		for (var j = 0; j < test_jason.books[i].sider.length; j++) {
-			let x = days_betwin_dates(test_jason.books[i].sider[j].dato,first_shown_date)*25
+			let x = days_betwin_dates(test_jason.books[i].sider[j].dato,first_shown_date)*intarval_sice
 			let y = 450 - test_jason.books[i].sider[j].side
 			vertex(x,y)
 		}
-		vertex(days_betwin_dates(test_jason.books[i].sider[test_jason.books[i].sider.length-1].dato,first_shown_date)*25,450 - 0)
+		vertex(days_betwin_dates(test_jason.books[i].sider[test_jason.books[i].sider.length-1].dato,first_shown_date)*intarval_sice,450 - 0)
 		endShape(/*CLOSE*/)
+		
 
+
+
+		//tekst
+		let startdato = days_betwin_dates(test_jason.books[i].sider[0].dato,first_shown_date)
+		let slutdato = days_betwin_dates(test_jason.books[i].sider[test_jason.books[i].sider.length-1].dato,first_shown_date)
+		let graf_midt = (startdato + slutdato) / 2
+
+		textSize(16)
+		textAlign(CENTER);
+		text("wasd", graf_midt * intarval_sice, 475);
 	}
 
 }

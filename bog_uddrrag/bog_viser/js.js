@@ -20,6 +20,21 @@ var books = {
 
 }
 
+
+function beregnDato() {	
+	for(let i=0; i<books.books.length; i++) {		
+		let startdato = Date.parse( books.books[i].startdato )
+		for(let j=0; j<books.books[i].sider.length; j++) {
+			let sider = books.books[i].sider[j]
+			let ny_dato = new Date( startdato+j*24*60*60*1000) ;
+			let ny_sider= { dato: ny_dato, side: sider }
+			books.books[i].sider[j] = ny_sider;
+		}		
+	}	
+	console.log( JSON.stringify( books ) );	
+}
+
+
 var test_jason = {
 
 	"books":[

@@ -36,6 +36,9 @@ var first_shown_date = "2020-08-10"
 var intarval_sice = 25
 
 
+var visningsmode = "side kommet til" // "side kommet til", "sider læst"
+
+
 
 
 function setup () {
@@ -59,9 +62,19 @@ function opdate_wiew () {
 		//graffer
 		fill(color(Math.floor(Math.random() * 156),Math.floor(Math.random() * 156),Math.floor(Math.random() * 156)))
 		beginShape()
-		for (var j = 0; j < test_jason.books[i].sider.length; j++) {
-			let x = days_betwin_dates(test_jason.books[i].sider[j].dato,first_shown_date)*intarval_sice
-			let y = 450 - test_jason.books[i].sider[j].side
+		vertex(days_betwin_dates(test_jason.books[i].sider[0].dato,first_shown_date)*intarval_sice,450 - 0)
+		for (var j = 1; j < test_jason.books[i].sider.length; j++) {
+			let x;
+			let y;
+			if(visningsmode == "side kommet til"){
+				x = days_betwin_dates(test_jason.books[i].sider[j].dato,first_shown_date)*intarval_sice
+				y = 450 - test_jason.books[i].sider[j].side
+			}else if(visningsmode == "sider læst"){
+				x = days_betwin_dates(test_jason.books[i].sider[j].dato,first_shown_date)*intarval_sice
+				y = 450 - (test_jason.books[i].sider[j].side - test_jason.books[i].sider[j-1].side)
+			}else{
+				console.alert("fejl")
+			}
 			vertex(x,y)
 		}
 		vertex(days_betwin_dates(test_jason.books[i].sider[test_jason.books[i].sider.length-1].dato,first_shown_date)*intarval_sice,450 - 0)

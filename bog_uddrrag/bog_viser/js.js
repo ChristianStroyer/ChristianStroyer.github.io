@@ -115,7 +115,7 @@ function opdate_wiew () {
 
 
 		//graffer
-		fill(books.done_data[i].main_collor)
+		
 		beginShape()
 		vertex(days_betwin_dates(books.done_data[i].sider[0].dato,first_shown_date)*intarval_sice,450 - 0)
 		for (var j = 1; j < books.done_data[i].sider.length; j++) {
@@ -131,7 +131,20 @@ function opdate_wiew () {
 				console.alert("fejl")
 			}
 			vertex(x,y)
+
+
+
+
+			fill(10)
+			line(days_betwin_dates(books.done_data[i].sider[0].dato,first_shown_date)*intarval_sice,450-0,days_betwin_dates(books.done_data[i].sider[0].dato,first_shown_date)*intarval_sice,300-0)
+
+			textSize(15)
+			textAlign(CENTER);
+			text(books.done_data[i].startdato,days_betwin_dates(books.done_data[i].sider[0].dato,first_shown_date)*intarval_sice , 290);
+
+
 		}
+		fill(books.done_data[i].main_collor)
 		vertex(days_betwin_dates(books.done_data[i].sider[books.done_data[i].sider.length-1].dato,first_shown_date)*intarval_sice,450 - 0)
 		endShape(/*CLOSE*/)
 		
@@ -202,7 +215,7 @@ function flyt_wiev (dage){
 	var result = new Date(first_shown_date)
 	result.setDate(result.getDate() + dage)
 
-	//result = result.toISOString().slice(0,10)
+
 
 	first_shown_date = result
 

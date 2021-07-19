@@ -21,8 +21,23 @@ var data = {
 		video
 
 		bilede
+
+		ai
+		Kunstig Inteligens
+		Mashine lerning
+
 		*/
 
+	{
+			"navn": 		"Ai Fodbold",
+			"tekst": 		"",
+			"billede": 		"/assets/AiFodbold.png",
+			"link": 		"/spil/unity/ai%20fodbold/index.html",
+			"type": 		"Kunstig Inteligens",
+			"lavet": 		"19 juli 2021",
+			"opdateret": 	"",
+			"keywords": 	["alle","spil forsøg","forsøg","ai","Kunstig Inteligens", "Mashine lerning"]
+	},
 	{
 			"navn": 		"SCIFI TUBES",
 			"tekst": 		"tekst",

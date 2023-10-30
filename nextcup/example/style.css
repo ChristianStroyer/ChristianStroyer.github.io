@@ -1,0 +1,40 @@
+.SideBySideEven{
+    display: flex;
+	justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.SideBySideEdges{
+    display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1{
+    border: 5px outset white;
+    background-color: white;
+    text-align: center;
+
+
+}
+
+
+div id {
+    margin-top: 100px;
+    /* Adjust the value as needed */
+}
+
+
+
+
+p {
+    font-size: 28px;
+}
+
+
+{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}

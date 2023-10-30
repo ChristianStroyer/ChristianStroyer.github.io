@@ -1,0 +1,2 @@
+might want to add a user information script/class wich contains all the information saved for the user
+

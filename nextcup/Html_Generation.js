@@ -21,7 +21,7 @@ class API_Choice extends Base{
         this.base.appendChild(this.input_APIKey);
 
         /////////////////////////////////////////////////////////////////////////////////
-        this.input_APIKey.value = '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'
+        this.input_APIKey.value = ''
         /////////////////////////////////////////////////////////////////////////////////
 
         // Create the multiple choice gpt version

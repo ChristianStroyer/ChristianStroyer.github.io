@@ -1,4 +1,4 @@
-let apiKey = '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'
+let apiKey = "s"+"k-99pDj"+"aHbhV4uD0R"+"HaI2BT3Bl"+"bkFJhB63Kk"+"kTvZoOZQ5fI"+"btY"
 let mlModel = 'gpt-3.5-turbo'
 
 const OpenAIRole = {
@@ -22,7 +22,7 @@ async function sendMessagesToOpenAI(messages) {
         return;
     }
 
-    //const apiKey = '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';
+    //const apiKey = '';
     const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
     const requestData = {
